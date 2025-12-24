@@ -1,0 +1,51 @@
+body {
+  background-color: #202124; /* ダークモード */
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  padding-top: 10vh;
+}
+
+/* 検索バー */
+.search-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  border-radius: 24px;
+  border: 1px solid #5f6368;
+  background: #303134;
+  color: white;
+  font-size: 16px;
+}
+
+/* 分割 */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 左右 50% ずつ */
+  gap: 20px;
+}
+
+.card {
+  background: #2d2e31;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+ul { list-style: none; padding: 0; }
+li { margin-bottom: 10px; }
+a { color: #8ab4f8; text-decoration: none; }
+
+/* TODO:インデントはスペース２つにそろえる */
