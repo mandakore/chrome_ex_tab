@@ -1,0 +1,24 @@
+{
+  "name": "chrome_ex_tab",
+  "version": "1.0.0",
+  "description": "拡張機能を作りたいですね",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mandakore/chrome_ex_tab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mandakore/chrome_ex_tab/issues"
+  },
+  "homepage": "https://github.com/mandakore/chrome_ex_tab#readme",
+  "devDependencies": {
+    "@types/chrome": "^0.1.32",
+    "typescript": "^5.9.3"
+  }
+}
