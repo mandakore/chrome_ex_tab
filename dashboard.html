@@ -2,11 +2,32 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Dashboard</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>my dashboard1</h1>
-	<p>check F5</p>
+	<div class="container">
+		<header class="search-section">
+			<h1>My Dev Dashboard</h1>
+			<form id="search-form">
+				<input type="text" id="search-input" placeholder="Google で検索" autocomplete="off">
+			</form>
+		</header>
+
+		<main class="dashboard-grid">
+			<section class="card history-card">
+				<h2>最近の履歴</h2>
+				<ul id="history-list"></ul>
+			</section>
+
+			<section class="card github-card">
+				<h2>GitHub Commits</h2>
+				<ul id="commit-list"></ul>
+			</section>
+		</main>
+	</div>
+
 	<script type="module" src="js/dashboard.js"></script>
 </body>
 </html>
