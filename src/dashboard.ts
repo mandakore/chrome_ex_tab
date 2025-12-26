@@ -15,4 +15,23 @@ const updateHistory = () => {
   });
 };
 
+// 検索機能
+const setupSearch = () => {
+  const searchForm = document.getElementById('search-form') as HTMLFormElement | null;
+  const searchInput = document.getElementById('search-input') as HTMLInputElement | null;
+
+  if (searchForm && searchInput) {
+    searchForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const query = searchInput.value.trim();
+      if (query) {
+        const searchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
+        window.location.href = searchUrl;
+      }
+    });
+  }
+};
+
+setupSearch();
+
 updateHistory();
